@@ -1,0 +1,41 @@
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Slab:wght@200;400;600&display=swap');
+
+// Reset
+
+:root{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;   
+}
+
+// Variables
+$COLOR:#de7a17;
+$FONDO:black;
+$HUESO:rgba(243, 227, 202, 0.959);
+$LETRA:#dbdbdb;
+
+$colores:(
+    COLOR:#de7a17,
+    FONDO:black,
+    HUESO:rgba(243, 227, 202, 0.959),
+    LETRA:#dbdbdb,
+);
+
+// Funciones mixin
+@mixin medidas($ANCHO,$ALTO) {
+    width: $ANCHO;
+    height: $ALTO;
+}
+@mixin colores($color,$fondo){
+    color: $color;
+    background-color: $fondo;
+}
+@mixin flex($flex,$diretion,$justify,$align){
+    display: $flex;
+    flex-direction: $diretion;
+    justify-content: $justify;
+    align-items: $align;
+}

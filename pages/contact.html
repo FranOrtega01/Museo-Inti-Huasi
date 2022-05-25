@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="turismo norte escuela tucuman argentina museo arqueologia urnas">
+    <meta name="description" content="Enterate donde estamos o comunicate con nosotros"> 
+
+    <title>Pandemia - Museo Inti Huasi</title>
+    <link rel="icon" href="../img/EmbeddedImage.gif">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="body__temp">
+    <header>
+        <div>
+            <a href="../index.html"><img src="../img/EmbeddedImage.gif" alt="Logo Llorona Museo Inti Huasi"></a>
+            <h1><a href="../index.html">Museo Inti Huasi</a></h1>
+        </div>
+        <div> 
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="encabezado__contenedor__nav">
+                            <div class="encabezado__searchbox">
+                                <table class="searchbox__table">
+                                    <tr>
+                                        <td><input type="search" placeholder="Buscar" class="searchbox"></td>
+                                        <td><button id="search" type="submit"> <img src="../iconos/search.svg" alt=""> </button></td>
+                                    </tr>
+                                </table> 
+                            </div>
+                            <ul class="navbar-nav  mb-2 mb-lg-0">
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" data-bs-toggle="dropdown" role="button" aria-expanded="false">El Museo</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="museo.html#proyecto">Nuestro Proyecto</a></li>
+                                        <li><a class="dropdown-item" href="museo.html#historiamuseo">La historia del Museo</a></li>
+                                        <li><a class="dropdown-item" href="museo.html#carouselExampleIndicators">Colecciones</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown" role="button"  aria-expanded="false">Comunidades</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="comunidades.html#amistad">Historia de una amistad</a></li>
+                                        <li><a class="dropdown-item" href="comunidades.html#ams">Escuela Ángel M. Soria</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                <a class="nav-link " id="navpad-item" aria-current="page" href="pandemia.html">Pandemia</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="navpad-item" aria-current="page" href="contact.html">Contacto</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid" data-aos="fade-down" data-aos-duration="800">
+            <section class="row justify-content-around">
+                <div class="flex-column  mt-3 col-xl-5 col-lg-6 col-md-6 col-sm-10 col-10">
+                    <h2 id="comollegar" class="h2__contact">¿Dónde Estamos?</h2>
+                    <div class="mapa__contenedor">
+                        <iframe  class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114293.35471511992!2d-66.05795179277011!3d-26.46645009310573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941f51324c52a171%3A0x1472dbb5b7add722!2sEscuela%20n%C2%B0%20217%20-%20%C3%81ngel%20Mar%C3%ADa%20Soria%20-%20El%20Ba%C3%B1ado!5e0!3m2!1ses-419!2sar!4v1648244516540!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <form class="mb-5 mt-3 col-xl-4 col-lg-3 col-md-4 col-sm-10 col-10 " action="" >
+                    <h2>Contactanos</h2>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input class="input" type="text" name="nombre" placeholder="Nombre">
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono</label>
+                        <input class="input" type="number" name="telefono" placeholder="Teléfono">
+                    </div>
+                    
+                    <label for="email">Email</label>
+                    <input class="input" type="email" name="email" placeholder="Correo Electrónico">
+                    <label for="text">Mensaje</label>
+                    <textarea name="mensaje" rows="5px" placeholder="Deje su mensaje" ></textarea> 
+                    <div class="submit">
+                        <input  type="submit" value="Enviar">
+                        <input  type="reset" value="Limpar">
+                    </div>        
+                </form>
+            </section>
+        </div>
+
+        <!-- Footer -->
+
+        <footer class="footer__contact">
+            <!-- Footer Logo -->
+            <a href="../index.html"><img class="footer__logo" src="../img/EmbeddedImage.gif" alt="Museo Inti Huasi"></a> 
+            <!-- Footer Nav -->
+            <div class="footer__texto">
+                <p>Tel: +549 11 2222-3333</p>
+                <a href="museo.html">Museo</a> 
+                <a href="#">Contacto</a>
+                <a href="comunidades.html">Comunidades</a> 
+                <a href="pandemia.html"> Pandemia</a>
+                <div class="footer__redes">
+                    <!-- Footer redes -->
+                    <div>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="../iconos/instagram.svg" alt="Instagram" ></a>
+                        <a href="https://www.facebook.com/home.php" target="_blank"><img src="../iconos/facebook.svg" alt="Facebook"></a>
+                        <a href="https://www.youtube.com/" target="_blank"><img src="../iconos/youtube.svg" alt="Youtube"></a>
+                    </div>
+                    <p>©Copyright</p>
+                </div> 
+            </div>
+        </footer>
+    </main>
+
+    <!-- Scripts -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    
+</body>
+
+</html>
