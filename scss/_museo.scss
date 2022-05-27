@@ -33,7 +33,7 @@
       
 }
 .modal-body{
-    display: flex;
+    @include flex (flex,row,space-between,none);
     padding: 15px;
     background-color: rgb(0, 0, 0);
     text-align: justify;
@@ -43,15 +43,28 @@
         height: 250px; 
     }
     p{
-        padding-top: 50px;
-        padding-right: 10px;
+        font-size: 18px;
+        padding-top: 10px;
+        width: 400px;
     }
 }
 .modal-contenido {
-    display: flex;
-    flex-direction: column;
+    @include flex(flex, column,space-between, center);
+    width: 60%;
     img{
     height: 400px;
+    margin-bottom: 20px;
     }
+    h5{
+        font-size: 30px
+    }
+    div{
+        text-align: center;
+    }
+}
+.modal-fotos{
+   @include flex (flex, column, center, center);
+   width: 40%;
+
 }
 

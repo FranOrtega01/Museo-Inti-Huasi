@@ -11,9 +11,12 @@
     <title>Comunidades - Museo Inti Huasi</title>
     <link rel="icon" href="../img/EmbeddedImage.gif">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,200" >
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    
     <link rel="stylesheet" href="../css/style.css">
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../js/up.js"></script>
 </head>
 
 <body>
@@ -49,7 +52,7 @@
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"  aria-expanded="false">Comunidades</a>
+                                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" data-bs-toggle="dropdown"role="button"  aria-expanded="false">Comunidades</a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <li><a class="dropdown-item" href="comunidades.html#amistad">Historia de una amistad</a></li>
                                         <li><a class="dropdown-item" href="comunidades.html#ams">Escuela Ángel M. Soria</a></li>
@@ -80,10 +83,12 @@
             <section class="row justify-content-center mb-4 " >
                 <article  data-aos="fade-down" data-aos-duration="800" class="xl-row justify-content-between col-xxl-9 col-xl-9 col-lg-10 col-md-11 col-sm-11 col-11 ">
                     <h2 id="amistad" class="titulo__general">Historia de una amistad</h2>
-                    <div class="row justify-content-center ">
-                        <div class=" d-flex justify-content-center col-xxl-7 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                            <img src="../img/comunidades 1.jpg" class="  card__img" alt="Primera reunión virtual con la comunidad de El Bañado">
-                            <img src="../img/comunidades1.1.jpg" class="  card__img" alt="Videollamada con la Escuela Ángel María Soria">
+                    <div class="row  justify-content-center ">
+                        <div class="justify-content-center d-flex col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <img src="../img/comunidades 1.jpg" class=" card__img img-fluid" alt="Primera reunión virtual con la comunidad de El Bañado">
+                        </div>
+                        <div class="justify-content-center d-flex col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <img src="../img/comunidades1.1.jpg" class=" card__img img-fluid" alt="Videollamada con la Escuela Ángel María Soria">
                         </div>
                         <div class=" col-xxl-4  col-xl-11 col-lg-11 col-md-10 col-sm-11 col-11">
                             <p class="p__general">
@@ -100,8 +105,8 @@
                 <article class=" col-xxl-9 col-xl-9 col-lg-10 col-md-11 col-sm-11 col-11 ">
                     <h2 id="ams" class="titulo__general">Escuela Ángel María Soria</h2>
                     <div class="row justify-content-center">
-                        <div class="d-flex justify-content-center col-xxl-6 col-xl-12 col-lg-12 col-md-12 col-sm-11 col-11">
-                            <img src="../img/escuela_6.jpg" id="imgescuela" class="card__img " alt="Escuela Ángel María Soria">
+                        <div class="d-flex justify-content-center col-xxl-5 col-xl-12 col-lg-12 col-md-12 col-sm-11 col-11">
+                            <img src="../img/escuela_6.jpg" id="imgescuela" class="card__img img-fluid" alt="Escuela Ángel María Soria">
                         </div>
                         <div class="col-xxl-5  col-xl-11 col-lg-11 col-md-10 col-sm-11 col-11">
                             <p class="p__general">La escuela N°217 Ángel María Soria, se encuentra situada en Tucumán en el kilómetro 4296 de la Ruta Nacional 40. La escuela es un establecimiento público perteneciente a la comunidad de "El Bañado" cuya población ronda en los 180 habitantes. Contando también con maestros de las provincias vecinas, Salta y Catamarca, esta escuela no solo recibe a los alumnos de la propia comunidad, sino también es casa de estudios para muchos otros chicos al rededor del Valle Calchaquí.</p>
@@ -110,7 +115,9 @@
                 </article>
             </section>
         </div>
-        
+        <span class="up material-symbols-outlined">
+            arrow_upward
+        </span>
         <!-- Footer -->
 
         <footer>

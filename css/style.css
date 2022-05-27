@@ -273,6 +273,9 @@ footer {
 
 .modal-body {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: none;
   padding: 15px;
   background-color: black;
   text-align: justify;
@@ -281,17 +284,33 @@ footer {
   .modal-body img {
     height: 250px; }
   .modal-body p {
-    padding-top: 50px;
-    padding-right: 10px; }
+    font-size: 18px;
+    padding-top: 10px;
+    width: 400px; }
 
 .modal-contenido {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%; }
   .modal-contenido img {
-    height: 400px; }
+    height: 400px;
+    margin-bottom: 20px; }
+  .modal-contenido h5 {
+    font-size: 30px; }
+  .modal-contenido div {
+    text-align: center; }
+
+.modal-fotos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%; }
 
 .card__img {
-  height: 190px;
+  max-height: 190px;
   margin: 10px;
   border-radius: 15px; }
 
@@ -378,8 +397,6 @@ form {
         border: 1px solid #de7a17; }
 
 @media (max-width: 991px) {
-  .navbar > .container-fluid {
-    justify-content: right; }
   .navbar-light .navbar-toggler {
     margin-bottom: 15px; }
   header div:last-of-type {
