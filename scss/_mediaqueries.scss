@@ -1,3 +1,30 @@
+@media (min-width:991px) {
+   .dropdown-toggle::after{ //Para pisar el bs
+      content: "";  
+      border: none;
+   }
+   nav a{
+      transition: all .3s ease;
+      &::after{
+         content: "";
+         width: 100%;
+         height: 1px;
+         background-color: $COLOR;
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         transform: scaleX(0);
+         transform-origin: left;   
+         transition: all .3s ease;
+         }
+     &:hover{
+         color: $COLOR;
+         &::after{
+             transform: scaleX(1);
+         }
+     }
+   } 
+}
 @media(max-width: 991px) { //Media queries de Nav responsive
     .navbar-light .navbar-toggler{
        margin-bottom: 15px;

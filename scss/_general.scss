@@ -6,7 +6,7 @@ body{
 
     &::-webkit-scrollbar{
         @include medidas (6px,30px);
-        background-color: map-get($colores, FONDO );
+        background-color: $FONDO;
      }
     &::-webkit-scrollbar-thumb{
         background-color: white;
@@ -25,14 +25,14 @@ body{
     text-align: center;
     font-size: 35px;
     padding: 60px;
-    background-color: map-get($colores, HUESO );
+    background-color:$HUESO;
     border-radius: 30px;
 }
 .p__general{
     padding: 10px 0px;
     line-height: 25px;
     text-align: justify;
-    color:map-get($colores,LETRA );
+    color:$LETRA;
 }
 
  //Header + Nav
@@ -52,18 +52,14 @@ header{
 .encabezado__contenedor{
     @include flex(flex, row, none, center);
 }
-nav{
-    a{
-        color:white;
-        padding: 12px 20px;
-        display:block;
-        transition: all 300ms;
-        font-size: 93.75%; 
-        &:hover{
-            color: map-get($colores, COLOR );
-        }
-    }
+nav a{
+    color:white;
+    padding: 12px 20px;
+    font-size: 93.75%; 
+    position: relative;
+    
 }
+
 
 .encabezado__contenedor__nav{
     @include flex(flex, row, none, center);
@@ -102,7 +98,7 @@ nav{
      transition: all 300ms;
      font-size: 93.75%; 
      &:hover{
-     color:map-get($colores, COLOR) ;}
+     color:$COLOR ;}
 }
 #navpad-item.active{
      color: $COLOR;
@@ -131,7 +127,7 @@ nav{
     padding: 12px 20px;
     color: white;
     &:hover{
-        color:map-get($colores, COLOR) ;
+        color:$COLOR ;
     }
 }
 .navbar-toggler{
@@ -140,11 +136,7 @@ nav{
 .dropdown-menu{
     background-color: $FONDO;
 }
-// .navbar>.container-fluid{
-//     display: flex;
-//     flex-wrap: inherit;
-//     align-items: right;
-// }
+
 //Botón Ir arriba
 .material-symbols-outlined{
     display: none;
