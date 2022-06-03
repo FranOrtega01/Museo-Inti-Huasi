@@ -1,3 +1,6 @@
+
+//Carousel
+
 .carousel__imagenes{
     height: 300px;
     transition: transform .4s;
@@ -10,9 +13,11 @@
  }
  .div__carousel__imagenes{
     @include flex(flex, row, center,center);
-    height: 400px;
-    
+    height: 400px;  
  }
+
+ //Modal
+
  .modal-content{
     border: 1px solid rgba(255, 255, 255, 0.541);
     color: white;

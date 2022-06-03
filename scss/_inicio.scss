@@ -1,20 +1,6 @@
-.header__inicio{
-    grid-area: enc;
-}
-.main__inicio{
-    grid-area: main;
-    display: block;
-    margin: auto;
-    background-color: $FONDO;
-}
-.footer__inicio{
-    grid-area: foot;
-}
-.grid__inicio{
-    display: grid;
-    max-height: 100vh;
-    grid-template-areas: 
-    "enc"
-    "main"
-    "foot" ;
+
+.inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

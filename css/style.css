@@ -220,22 +220,10 @@ footer {
   .footer__redes a {
     padding: 0 2px; }
 
-.header__inicio {
-  grid-area: enc; }
-
-.main__inicio {
-  grid-area: main;
-  display: block;
-  margin: auto;
-  background-color: black; }
-
-.footer__inicio {
-  grid-area: foot; }
-
-.grid__inicio {
-  display: grid;
-  max-height: 100vh;
-  grid-template-areas: "enc" "main" "foot"; }
+.inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .carousel__imagenes {
   height: 300px;
@@ -442,7 +430,12 @@ textarea::-webkit-scrollbar-thumb {
   .dropdown-item {
     text-align: right; }
   .dropdown-menu:last-child {
-    border-bottom: solid 1px white; } }
+    border-bottom: solid 1px white; }
+  #set-right {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: right;
+    justify-content: space-between; } }
 
 @media (min-width: 1400px) {
   .footer__contact {
@@ -629,55 +622,55 @@ textarea::-webkit-scrollbar-thumb {
     position: absolute;
     left: 50%;
     transform: translate(-50%); }
-    .modal-content .btn-close {
-      background-color: white; }
-    .modal-content .modal-header {
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      background-color: #181717; }
-    .modal-content .modal-body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: black;
-      text-align: justify;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
-      width: 100%; }
-      .modal-content .modal-body img {
-        height: 140px;
-        margin: 10px; }
-      .modal-content .modal-body p {
-        width: 100%;
-        padding-top: 50px;
-        padding-right: 0px; }
-      .modal-content .modal-body h5 {
-        width: 100%;
-        text-align: center; }
-        .modal-content .modal-body h5 .modal-contenido {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 100%; }
-          .modal-content .modal-body h5 .modal-contenido img {
-            height: 200px; }
-          .modal-content .modal-body h5 .modal-contenido div {
-            width: 100%; }
-        .modal-content .modal-body h5 .modal-fotos {
-          display: flex;
-          flex-direction: column;
-          align-items: center; }
-    .modal-content footer {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%; }
-    .modal-content .footer__texto {
+  .btn-close {
+    background-color: white; }
+  .modal-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #181717; }
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    text-align: justify;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%; }
+    .modal-body img {
+      height: 140px;
+      margin: 10px; }
+    .modal-body p {
       width: 100%;
-      grid-template-areas: "a1" "a3" "a4" "a2" "redes" "p";
-      gap: 7px; }
-    .modal-content .encabezado__searchbox {
-      width: 150px; } }
+      padding-top: 50px;
+      padding-right: 0px; }
+    .modal-body h5 {
+      width: 100%;
+      text-align: center; }
+      .modal-body h5 .modal-contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%; }
+        .modal-body h5 .modal-contenido img {
+          height: 200px; }
+        .modal-body h5 .modal-contenido div {
+          width: 100%; }
+      .modal-body h5 .modal-fotos {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; }
+  .footer__texto {
+    width: 100%;
+    grid-template-areas: "a1" "a3" "a4" "a2" "redes" "p";
+    gap: 7px; }
+  .encabezado__searchbox {
+    width: 150px; } }

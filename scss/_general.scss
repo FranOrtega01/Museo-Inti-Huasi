@@ -184,6 +184,7 @@ footer{
     a{
         font-weight: 600;
     }
+    // Los 4 links del footer
     a:first-of-type{
         grid-area: a1;
         display: flex;
@@ -206,13 +207,14 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;}
-
+    //Grid del footer para poder modificarlo en los Mediasqueries
     display: grid;
     width: 700px;
     grid-template-areas: "p a1 a3 redes"
                          "p a2 a4 redes";
 
 }
+// img links de las redes
 .footer__redes{
     @include flex (flex, column, center, center);
     padding-top: 6px;
@@ -225,5 +227,3 @@ footer{
         padding: 0 2px;
     }
 }
-
-

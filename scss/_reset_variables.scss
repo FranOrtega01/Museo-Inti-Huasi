@@ -17,14 +17,9 @@ $FONDO:black;
 $HUESO:rgba(243, 227, 202, 0.959);
 $LETRA:rgb(219, 219, 219);
 
-$colores:(
-    COLOR:#de7a17,
-    FONDO:black,
-    HUESO:rgba(243, 227, 202, 0.959),
-    LETRA:#dbdbdb,
-);
 
 // Funciones mixin
+
 @mixin medidas($ANCHO,$ALTO) {
     width: $ANCHO;
     height: $ALTO;

@@ -25,7 +25,8 @@
     .navbar-light .navbar-toggler{
        margin-bottom: 15px;
     }
-    header div:last-of-type{
+    //Para posicionar todo el nav y su contenido a la derecha cuando el nav se cierra (hamburger)
+    header div:last-of-type{ //Li items
        @include flex(flex, column, none, flex-end)
     }
     .encabezado__contenedor__nav{
@@ -48,6 +49,7 @@
       border-bottom: solid 1px white;
    }
 }
+
    
 
  
@@ -295,6 +297,7 @@
         position: absolute;
         left: 50%;
         transform: translate(-50%);
+     }
         .btn-close{
            background-color: white;
         }
@@ -362,7 +365,7 @@
     .encabezado__searchbox {
        width: 150px;
     }
- }
+ 
  
 }
  
