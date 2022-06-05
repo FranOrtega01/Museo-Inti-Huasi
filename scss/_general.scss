@@ -41,7 +41,6 @@ header{
     background-color:$FONDO;
     width: 100%;
     @include flex(flex, row, space-between, center);
-    align-items: center;
     padding:15px 10px;
     div{
         @include flex(flex, row, unset, center);
@@ -93,6 +92,7 @@ nav a{
             }
     }
 }
+//Cambio de estilo del Nav de BS
 .nav-link{
      color:white;
      padding: 12px 20px;
@@ -101,24 +101,24 @@ nav a{
      &:hover{
      color:$COLOR ;}
 }
-#navpad-item.active{
+#navpad-item.active{ // Color naranja en el nav cuando está activo
      color: $COLOR;
 }
 #navbarDropdown.nav-link.active.dropdown-toggle{
     color: $COLOR;
 }
-#navpad-item{
+#navpad-item{ 
      padding: 12px 20px;
      color: white;
      &:hover{
-         color: map-get($colores, COLOR);
+         color: $COLOR;
     }
 }
 .dropdown-item{
      padding: 12px 20px;
      @include colores(white, $FONDO);
      &:hover{
-         @include colores($COLOR,$FONDO)
+         @include colores($COLOR,$FONDO);
     }
 }
 .navbar-light .navbar-nav .nav-link{
@@ -138,7 +138,7 @@ nav a{
     background-color: $FONDO;
 }
 
-//Botón Ir arriba
+//Botón Ir arriba +js
 .material-symbols-outlined{
     display: none;
     background-color: $HUESO;
@@ -147,6 +147,7 @@ nav a{
     border: solid 1px black;
     padding: 5px;
     transform: scale(1.5);
+
     position: fixed;
     bottom: 20px;
     right: 20px;  
@@ -174,39 +175,31 @@ footer{
     width: 65px;
 }
 
-.footer__texto{
+.footer__contenido{
     p{
         grid-area: p;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex, row, center, center);
+
     }
     a{
         font-weight: 600;
+        @include flex (flex, row, center, center);
     }
     // Los 4 links del footer
     a:first-of-type{
         grid-area: a1;
-        display: flex;
-        justify-content: center;
-        align-items: center;}
+    }
     a:nth-of-type(2){
         grid-area: a2;
-        display: flex;
-        justify-content: center;
-        align-items: center;}
+    }
 
     a:nth-of-type(3){
         grid-area: a3;
-        display: flex;
-        justify-content: center;
-        align-items: center;}
+    }
             
     a:last-of-type{
         grid-area: a4;
-        display: flex;
-        justify-content: center;
-        align-items: center;}
+    }
     //Grid del footer para poder modificarlo en los Mediasqueries
     display: grid;
     width: 700px;

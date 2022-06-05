@@ -44,7 +44,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  align-items: center;
   padding: 15px 10px; }
   header div {
     display: flex;
@@ -175,37 +174,30 @@ footer {
 .footer__logo {
   width: 65px; }
 
-.footer__texto {
+.footer__contenido {
   display: grid;
   width: 700px;
   grid-template-areas: "p a1 a3 redes" "p a2 a4 redes"; }
-  .footer__texto p {
+  .footer__contenido p {
     grid-area: p;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center; }
-  .footer__texto a {
-    font-weight: 600; }
-  .footer__texto a:first-of-type {
-    grid-area: a1;
+  .footer__contenido a {
+    font-weight: 600;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center; }
-  .footer__texto a:nth-of-type(2) {
-    grid-area: a2;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .footer__texto a:nth-of-type(3) {
-    grid-area: a3;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .footer__texto a:last-of-type {
-    grid-area: a4;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+  .footer__contenido a:first-of-type {
+    grid-area: a1; }
+  .footer__contenido a:nth-of-type(2) {
+    grid-area: a2; }
+  .footer__contenido a:nth-of-type(3) {
+    grid-area: a3; }
+  .footer__contenido a:last-of-type {
+    grid-area: a4; }
 
 .footer__redes {
   display: flex;
@@ -222,8 +214,11 @@ footer {
 
 .inicio {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center; }
+  .inicio img {
+    max-height: 800px; }
 
 .carousel__imagenes {
   height: 300px;
@@ -374,8 +369,8 @@ textarea::-webkit-scrollbar-thumb {
   padding-top: 40px; }
   .submit input {
     width: 75px;
-    background-color: #060606;
     color: white;
+    background-color: #060606;
     border-radius: 15px;
     cursor: pointer;
     border: 1px solid rgba(83, 83, 83, 0.291);
@@ -422,20 +417,15 @@ textarea::-webkit-scrollbar-thumb {
     flex-direction: column;
     justify-content: none;
     align-items: flex-end; }
-  #navbarDropdown {
-    text-align: right;
-    color: white; }
   #navpad-item {
     text-align: right; }
   .dropdown-item {
     text-align: right; }
   .dropdown-menu:last-child {
     border-bottom: solid 1px white; }
-  #set-right {
-    display: flex;
-    flex-wrap: inherit;
-    align-items: right;
-    justify-content: space-between; } }
+  #navbarDropdown {
+    text-align: right;
+    color: white; } }
 
 @media (min-width: 1400px) {
   .footer__contact {
@@ -445,230 +435,87 @@ textarea::-webkit-scrollbar-thumb {
 
 @media (min-width: 1200px) and (max-width: 1400px) {
   .modal-content {
-    border: 1px solid rgba(255, 255, 255, 0.541);
-    color: white;
-    border-radius: 10px;
-    width: 1000px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%); }
-    .modal-content .btn-close {
-      background-color: white; }
-    .modal-content .modal-header {
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      background-color: #181717; }
-    .modal-content .modal-body {
-      display: flex;
-      padding: 15px;
-      background-color: black;
-      text-align: justify;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px; }
-      .modal-content .modal-body img {
-        height: 208px; }
-      .modal-content .modal-body p {
-        padding-top: 50px; }
-      .modal-content .modal-body .modal-contenido {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center; }
-        .modal-content .modal-body .modal-contenido img {
-          height: 350px; }
+    width: 1000px; }
+    .modal-content .modal-body img {
+      height: 208px; }
+    .modal-content .modal-body p {
+      padding-top: 50px; }
+    .modal-content .modal-body .modal-contenido img {
+      height: 350px; }
   .footer__contact {
     position: absolute;
     width: 100%;
     bottom: 0px; } }
 
-@media (min-width: 991px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .modal-content {
-    border: 1px solid rgba(255, 255, 255, 0.541);
-    color: white;
-    border-radius: 10px;
-    width: 800px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%); }
-    .modal-content .btn-close {
-      background-color: white; }
-    .modal-content .modal-header {
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      background-color: #181717; }
-    .modal-content .modal-body {
-      padding: 15px;
-      background-color: black;
-      text-align: justify;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px; }
-      .modal-content .modal-body img {
-        height: 166px; }
-      .modal-content .modal-body p {
-        padding-top: 50px;
-        padding-right: 10px; }
-      .modal-content .modal-body .modal-contenido {
-        display: flex;
-        flex-direction: column; }
-        .modal-content .modal-body .modal-contenido img {
-          height: 300px; }
+    width: 800px; }
+    .modal-content .modal-body img {
+      height: 166px; }
+    .modal-content .modal-body p {
+      padding-top: 50px; }
+    .modal-content .modal-body .modal-contenido img {
+      height: 300px; }
   .encabezado__searchbox {
     width: 200px; }
   #navbarDropdown {
     padding: 12px 12px;
     width: 100%; }
   #navpad-item {
-    padding: 12px 12px; }
-  .footer__contact {
-    position: absolute;
-    width: 100%;
-    bottom: 0px; } }
+    padding: 12px 12px; } }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .modal-content {
-    border: 1px solid rgba(255, 255, 255, 0.541);
-    color: white;
-    border-radius: 10px;
-    width: 700px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%); }
-    .modal-content .btn-close {
-      background-color: white; }
-    .modal-content .modal-header {
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      background-color: #181717; }
-    .modal-content .modal-body {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      padding: 15px;
-      background-color: black;
-      text-align: justify;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px; }
-      .modal-content .modal-body img {
-        height: 166px; }
-      .modal-content .modal-body p {
-        padding-top: 50px;
-        padding-right: 10px; }
-      .modal-content .modal-body .modal-contenido {
-        display: flex;
-        flex-direction: column; }
-        .modal-content .modal-body .modal-contenido img {
-          height: 266px; }
-  .footer__contact {
-    position: absolute;
-    width: 100%;
-    bottom: 0px; }
+    width: 700px; }
+  .modal-body img {
+    height: 166px; }
+  .modal-contenido img {
+    height: 266px; }
   .encabezado__searchbox {
     width: 200px; } }
 
 @media (max-width: 768px) {
   .modal-content {
-    border: 1px solid rgba(255, 255, 255, 0.541);
-    color: white;
-    border-radius: 10px;
-    width: 500px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%); }
-    .modal-content .btn-close {
-      background-color: white; }
-    .modal-content .modal-header {
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      background-color: #181717; }
-    .modal-content .modal-body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 15px;
-      background-color: black;
-      text-align: justify;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px; }
-      .modal-content .modal-body img {
-        height: 166px; }
-      .modal-content .modal-body p {
-        padding-top: 50px;
-        padding-right: 10px; }
-      .modal-content .modal-body .modal-contenido {
-        display: flex;
-        flex-direction: column; }
-        .modal-content .modal-body .modal-contenido img {
-          height: 266px; }
-      .modal-content .modal-body .modal-fotos {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
+    width: 500px; }
+  .modal-body {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center; }
+    .modal-body img {
+      height: 166px; }
+    .modal-body .modal-contenido img {
+      height: 266px; }
   footer {
     display: flex;
     flex-direction: column; }
-  .footer__texto {
+  .footer__contenido {
     width: 100%; }
   .encabezado__searchbox {
     width: 200px; } }
 
 @media (max-width: 576px) {
   .modal-content {
-    border: 1px solid rgba(255, 255, 255, 0.541);
-    color: white;
-    border-radius: 10px;
-    width: 350px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%); }
-  .btn-close {
-    background-color: white; }
-  .modal-header {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background-color: #181717; }
+    width: 350px; }
   .modal-body {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
-    align-items: center;
-    background-color: black;
-    text-align: justify;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    width: 100%; }
+    align-items: center; }
     .modal-body img {
       height: 140px;
       margin: 10px; }
     .modal-body p {
-      width: 100%;
-      padding-top: 50px;
-      padding-right: 0px; }
-    .modal-body h5 {
-      width: 100%;
-      text-align: center; }
-      .modal-body h5 .modal-contenido {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%; }
-        .modal-body h5 .modal-contenido img {
-          height: 200px; }
-        .modal-body h5 .modal-contenido div {
-          width: 100%; }
-      .modal-body h5 .modal-fotos {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
+      width: 100%; }
+    .modal-body .modal-contenido img {
+      height: 200px; }
   footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100%; }
-  .footer__texto {
+  .footer__contenido {
     width: 100%;
     grid-template-areas: "a1" "a3" "a4" "a2" "redes" "p";
     gap: 7px; }

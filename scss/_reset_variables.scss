@@ -12,10 +12,10 @@
 }
 
 // Variables
-$COLOR:#de7a17;
-$FONDO:black;
-$HUESO:rgba(243, 227, 202, 0.959);
-$LETRA:rgb(219, 219, 219);
+$COLOR:#de7a17;  //Color especial de la página del museo (mismo naranja que el logo)
+$FONDO:rgb(0, 0, 0);    // Color del fondo y de los objetos, hecho por si en un futuro hay temas (oscuro - claro)
+$HUESO:rgba(243, 227, 202, 0.959); //Color base
+$LETRA:rgb(219, 219, 219); //Color de las fuentes
 
 
 // Funciones mixin
