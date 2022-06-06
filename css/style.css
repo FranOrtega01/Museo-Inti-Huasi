@@ -447,7 +447,7 @@ textarea::-webkit-scrollbar-thumb {
     width: 100%;
     bottom: 0px; } }
 
-@media (max-width: 1200px) {
+@media (min-width: 991px) and (max-width: 1200px) {
   .modal-content {
     width: 800px; }
     .modal-content .modal-body img {
@@ -464,7 +464,7 @@ textarea::-webkit-scrollbar-thumb {
   #navpad-item {
     padding: 12px 12px; } }
 
-@media (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .modal-content {
     width: 700px; }
   .modal-body img {

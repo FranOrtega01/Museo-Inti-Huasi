@@ -82,7 +82,7 @@
     }
  }
  
- @media (max-width: 1200px){
+ @media (min-width:991px) and (max-width: 1200px){
      .modal-content{ //Modificar el tamaño del modal y su contenido
         width: 800px;
        .modal-body{
@@ -110,7 +110,7 @@
 //Una pantalla con un ancho <1200px tiene la altura necesaria para que el footer quede oegado abajo, que desaparece el position:relative
 }
  
- @media (max-width: 991px){
+ @media (min-width:768px) and (max-width: 991px){
 
      .modal-content{ //Modificar el tamaño del modal y su contenido
         width: 700px;
@@ -193,7 +193,5 @@
     .encabezado__searchbox { //Reajusta la barra de navegación del Nav
        width: 150px;
     }
- 
- 
 }
  
