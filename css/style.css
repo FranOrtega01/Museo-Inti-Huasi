@@ -380,6 +380,29 @@ textarea::-webkit-scrollbar-thumb {
       color: #de7a17;
       border: 1px solid #de7a17; }
 
+#exitoDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000; }
+
+#exitoH1 {
+  color: white;
+  text-align: center; }
+
+#exitoH2 {
+  color: #de7a17;
+  text-align: center; }
+
+#exitoIMG {
+  width: 75px; }
+
 @media (min-width: 991px) {
   nav a {
     transition: all .3s ease; }
@@ -472,7 +495,9 @@ textarea::-webkit-scrollbar-thumb {
   .modal-contenido img {
     height: 266px; }
   .encabezado__searchbox {
-    width: 200px; } }
+    width: 200px; }
+  #exitoH1 {
+    font-size: 28px; } }
 
 @media (max-width: 768px) {
   .modal-content {
@@ -520,4 +545,8 @@ textarea::-webkit-scrollbar-thumb {
     grid-template-areas: "a1" "a3" "a4" "a2" "redes" "p";
     gap: 7px; }
   .encabezado__searchbox {
-    width: 150px; } }
+    width: 150px; }
+  #exitoH1 {
+    font-size: 24px; }
+  #exitoH2 {
+    font-size: 20px; } }

@@ -79,3 +79,25 @@ form{
             }
         }
     }
+
+    //Formulario
+    #exitoDiv{
+        @include flex (flex, column, center, center);
+        width: 100vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #000000;
+    }
+    #exitoH1{
+        color: white;
+        text-align: center;
+    }
+    #exitoH2{
+        color: $COLOR;
+        text-align: center;
+    }
+    #exitoIMG{
+        width: 75px;
+    }
